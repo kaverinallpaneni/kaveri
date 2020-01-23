@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sign-in</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Sign-in</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">   
 </head>
 <body>
 	<div>
-		<header>
-            <hgroup>
-				<h1>Sign-in component wireframe</h1>
-                <div> <li><input type="button" value="logo"></li></div></br>
-                <div>
-                    <nav><center>
-                    <input type="button" value="upload media">
-                    <input type="button" value="my media">
-                    <input type="button" value="followers/following">
-                    <input type="button" value="account"></center></br>
-                </nav>
+        <header class="container">
+            <hgroup class="row mt-4 mb-4">
+                <div class="col-3"><img src="logo.jpg" width="100px" height="100px"></div>
+                   <div class="col-6">
+                <nav>
+                    <a href="button" class="btn btn-primary">uploadmedia</a>
+                    <a href="button" class="btn btn-primary">mymedia</a>
+                    <a href="button" class="btn btn-primary">followers/following</a>
+                     </nav>
+                    </div>
+                    <div class="col-3"> <a href="button" class="btn btn-primary">account</a>
                     </div>
                 </hgroup>
-                <hgroup>
-                    <div><li><input type="profile image" value="profile image"> <input type="@welcome" value="@welcome" ></li></br></div>
+                <hgroup class="row mt-4 mb-4">
+                    <div class="col-3"><img src="profileimage.jpg" width="100px" height="100px">  </div>
+                    <div class="col-3" >@welcome</div>
                     </hgroup>
                     </header>
                     <aside>
-                        <div>account</div></br>
-                        <div> <li><input type="login" value="login"></li>
-                        <li><input type="register" value="register"></li></br></div>
+                        <div class="col-3"><div><u>account</u></div>
+                        <br class="row mt-4 mb-4">
+                        <a href="button" class="btn btn-primary">login</a>
+                    </br>
+                    </br>
+                        <a href="button" class="btn btn-primary">register</a> 
+                        </div>
                     </aside>
                     <section>
-                        <div>
-                            <center><li><input type="login" value="login"></li></center></br></div>
-                        <div>
-                            <center>username <input type="username" name="username"></center></br>
-                           <center>password <input type="password" name="password"></center></br></div>
-                            <div>
-                                <center><li><input type="button" value="login"></center></li>
-                            </div>
+                        <div align="center">
+                            <h1>Login</h1></div>
+                            </br>
+                            </br>
+                            <div align="center">
+                            username<input type="username" name="username">
+                        </br>
+                        </br>
+                        password<input type="password" name="password">
+                    </br>
+                    </br>
+                    <input type="button" value="login"></div>
                         </section>
                         <script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>	
-			</body>
-    </html>
+                    </body>
+                    </html>
+                    

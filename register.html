@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>register</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Register component wireframe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 	<div>
-		<header>
-            <hgroup>
-				<h1>Register component wireframe</h1>
-                <div> <li><input type="logo" value="logo"></li></div></br>
-                <div>
-                    <nav>
-                        <center>
-                    <input type="button" value="upload media">
-                    <input type="button" value="my media">
-                    <input type="button" value="followers/following">
-                    <input type="button" value="account">
-                </center></br>
-                </nav>
+		<header class="container">
+            <hgroup class="row mt-4 mb-4">
+                <div class="col-3"><img src="logo.jpg" width="100px" height="100px"></div>
+                   <div class="col-6">
+                <nav>
+                    <a href="button" class="btn btn-primary">uploadmedia</a>
+                    <a href="button" class="btn btn-primary">mymedia</a>
+                    <a href="button" class="btn btn-primary">followers/following</a>
+                     </nav>
+                    </div>
+                    <div class="col-3"> <a href="button" class="btn btn-primary">account</a>
                     </div>
                 </hgroup>
-                <hgroup>
-                    <div><li><input type="profile image" value="profile image">  <input type="@welcome" value="@welcome" ></li></br></div>
+                <hgroup class="row mt-4 mb-4">
+                    <div class="col-3"><img src="profileimage.jpg" width="100px" height="100px">  </div>
+                    <div class="col-3" >@welcome</div>
                     </hgroup>
                     </header>
                     <aside>
-                        <div>account</div></br>
-                        <div> <li><input type="login" value="login"></li>
-                        <li><input type="register" value="register"></li></br></div>
+                        <div class="col-3"><div><u>account</u></div>
+                        <div class="row mt-4 mb-4">
+                        <a href="button" class="btn btn-primary">login</a>
+                    </br>
+                    </br>
+                        <a href="button" class="btn btn-primary">register</a> 
+                        </div>
                     </aside>
                     <section>
-                        <div> 
-                            <center><li><input type="login" value="login"></li></center></br>
-                        </div>
-                        <div>
-                            <center> username            <input type="username" name="username">   <input type="button" value="check"></center></br>
-                            <center> password            <input type="password" name="password"></center></br>
-                            <center> repeat password     <input type="repeat password" name="repeat password"></center></br>
-                            <center> email               <input type="email" name="email"></center></br>
-                        </div>
-                            <div>
-                                <center><li><input type="button" value="register"></li></center>
-                            </div>
-
-                          </section>
-                          <script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>	
-			</body>
+                        <div align="center">
+                     <h1>Login</h1></div>
+                     </br>
+                    </br>
+                    <div align="center">
+                   username<input type="username" name="username"> <input type="button" value="check">
+                    </br>
+                    </br>
+                    password<input type="password" name="password">
+                </br>
+                </br>
+                repeatpassword<input type="repeatpassword" name="repeatpassword">
+                    </br>
+                    </br>
+                email<input type="email" name="email">
+                </br>
+                </br>
+                <input type="button" value="register"></div>
+                    
+                           </section>
+                          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
     </html>
