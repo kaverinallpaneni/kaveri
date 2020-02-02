@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row mt-4 mb-4">
+        <div *ngIf="!autherized" class="text-danger">
+            <h4>{{errorMessage}}</h4>
+          </div>
+              <form [formGroup]="myFormGroup"  (ngSubmit)="login()">
+                 <div class="row">
+                    <section>
+                        <div class="row form-group">
+                            <div class="col-3"><h3>LOGIN</h3></div>
+                        </div>
+                        <div class=" row form-group">
+                            <label for="UserName" class="col-sm-3">UserName</label>
+                             <div class="col-sm-3">
+                                  <input type="text" #txtLogin name="uname" [formControl]="myFormGroup.controls['username']" placeholder="UserName">
+                                    </div>
+                                    <div class="col-sm-6">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3">Password</label>
+                                    <div class="col-sm-3">
+                                        <input type="password" #txtPass name="upwd" [formControl]="myFormGroup.controls['password']" placeholder="Password">
+                                    </div>
+                                    <div class="col-sm-6">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-3 col-sm-9 mt-4">
+                                        <button type="button" class="btn  btn-primary mb-3" (click)="checkLogin(txtLogin, txtPass)">Signin</button>&nbsp;<button [routerLink]="['/register']"  type="button"  class="btn  btn-primary mb-3" >Register</button> 
+                                    </div>
+                                </div>
+                            
+                            </section>
+                            </div> 
+                        </form>
+                </div>
+                
+                
+            
+        
+                      

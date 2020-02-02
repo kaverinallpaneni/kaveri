@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+               <section>
+                       <div class="col-3"><h1> REGISTER </h1></div>
+                   <div class="row">
+                       <label for="UserName" class="col-sm-3">UserName</label>
+                        <div class="col-sm-3">
+                             <input type="text" #txtLogin name="uname" [formControl]="myFormGroup.controls['username']" placeholder="UserName">
+                               </div>
+                               <div class="col-sm-6">
+                               </div>
+                           </div>
+                           <br>
+                           <div class="row">
+                               <label class="col-sm-3">Password</label>
+                               <div class="col-sm-3">
+                                   <input type="password" #txtPass name="upwd" [formControl]="myFormGroup.controls['password']" placeholder="Password">
+                               </div>
+                               <div class="col-sm-6">
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="offset-3 col-sm-9 mt-4">
+                                   <button type="button" class="btn  btn-primary mb-3" (click)="checkLogin(txtLogin, txtPass)">Signin</button>
+                               </div>
+                           </div>
+                       
+                       </section>
+                       </div> 
+                   </div>
