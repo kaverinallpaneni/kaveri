@@ -1,12 +1,36 @@
+<div class="container mt-5">
+      <aside class="col-sm-3 mr-10">
+          <div  class="mr-5">
+              <div class="row justify-content-center mb-4">
+                  <u><p>Account</p></u>
+              </div>
+          </div>
+          <hr>
+          <div class="d-flex flex-column">
+              <div class="p-1">
+                  <button type="button" class="btn btn-primary w-75 " [routerLink]="['/news-feeds']" >Newsfeed</button>
+              </div>
+              <div class="p-1">
+                  <button  type="button" class="btn btn-primary w-75 "  [routerLink]="['/account-update']">AccountUpdate</button>
+              </div>
+              <div class="p-1">
+                  <button  type="button" class="btn btn-primary w-75 " [routerLink]="['/search']">Search</button>
+              </div>
+          </div>
+
+      </aside> 
+      </div>
+    <section>
 <div class="card-deck">
-    <div class="card">
+  <div class="card">
     <img class="card-img-top" src="assets/user.jpeg" width="40px" height="40px" alt="Card image">
-    <div class="card-footer">@username</div>
     <div class="card-body">
       <p class="card-text">profile image</p>
     </div>
+    <div class="card-footer">@username</div>
     <div class="card-footer">unblock</div>
   </div>
+    
     <div class="card">
     <img class="card-img-top" src="assets/user.jpeg" width="40px" height="40px" alt="Card image">
     <div class="card-body">
@@ -50,3 +74,4 @@
     <div class="card-footer">unblock</div>
   </div>
   </div>
+  </section>

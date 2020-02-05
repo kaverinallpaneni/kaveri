@@ -10,6 +10,8 @@ import { SinglemediaComponent } from './singlemedia/singlemedia.component';
 import { MultiplemediaComponent } from './multiplemedia/multiplemedia.component';
 import { BlockedusersComponent } from './blockedusers/blockedusers.component';
 import { AccountupdateComponent } from './accountupdate/accountupdate.component';
+import { NewsfeedComponent } from './newsfeed/newsfeed.component';
+import { AuthGaurdService } from './service/auth-gaurd.service';
 
 
 
@@ -24,7 +26,11 @@ const routes: Routes = [
   {path:"singlemedia",component:SinglemediaComponent},
   {path:"multiplemedia",component:MultiplemediaComponent},
   {path:"blockedusers",component:BlockedusersComponent},
-  {path:"accountupdate",component:AccountupdateComponent}
+  {path:"accountupdate",component:AccountupdateComponent},
+  {path:"newsfeed",component:NewsfeedComponent},
+{path:"mymeia",component:MymediaComponent,canActivate:[AuthGaurdService]}  
+
+
 ];
 
 @NgModule({

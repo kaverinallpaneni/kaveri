@@ -16,6 +16,9 @@ import { SinglemediaComponent } from './singlemedia/singlemedia.component';
 import { MultiplemediaComponent } from './multiplemedia/multiplemedia.component';
 import { BlockedusersComponent } from './blockedusers/blockedusers.component';
 import { AccountupdateComponent } from './accountupdate/accountupdate.component';
+import { NewsfeedComponent } from './newsfeed/newsfeed.component';
+import { SearchComponent } from './search/search.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { AccountupdateComponent } from './accountupdate/accountupdate.component'
     SinglemediaComponent,
     MultiplemediaComponent,
     BlockedusersComponent,
-    AccountupdateComponent
+    AccountupdateComponent,
+    NewsfeedComponent,
+    SearchComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
