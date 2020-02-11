@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-   <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="core" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,12 +12,14 @@
 	<thead>
 		<th>NAME</th>
 		<th>EMAIL</th>
+		<th>AGE</th>
 	</thead>
 	<tbody>
 		<core:forEach var="student" items="${students}">
 			<tr>
 				<td>${student.name}</td>
 				<td>${student.email}</td>
+				<td>${student.age}</td>
 			</tr> 
 		</core:forEach>
 	</tbody>

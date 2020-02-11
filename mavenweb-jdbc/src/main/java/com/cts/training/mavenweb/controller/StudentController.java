@@ -1,4 +1,5 @@
 package com.cts.training.mavenweb.controller;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,8 @@ import com.cts.training.mavenweb.entity.Student;
 @Controller
 @RequestMapping("/student")
 public class StudentController {
+
+	// dependency
 	@Autowired
 	private IStudentDao studentDao;
 	
@@ -26,5 +29,4 @@ public class StudentController {
 		// return the view page
 		return "student-list";
 	}
-
 }

@@ -1,8 +1,8 @@
 package com.cts.training.mavenweb.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-
-public class WebXmlAlternate extends AbstractAnnotationConfigDispatcherServletInitializer { 
+// Auto registers DS
+public class WebXmlAlternate extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
@@ -25,4 +25,3 @@ public class WebXmlAlternate extends AbstractAnnotationConfigDispatcherServletIn
 	}
 
 }
-
